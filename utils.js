@@ -16,7 +16,8 @@ Strict OUTPUT RULES:
 - DO NOT add PlaneGeometry, ground meshes, or any flat surfaces as bases.
 - Focus solely on creating the requested 3D geometry floating in space.
 - The scene already has a grid helper for reference - do not add additional ground elements.
--Always align objects so their base sits at or just above y=0 by adjusting position.y using the bounding box or geometry dimensions.`;
+-Always align objects so their base sits at or just above y=0 by adjusting position.y using the bounding box or geometry dimensions.
+- Always rescale the generated geometry so its bounding box exactly matches the target X, Y, Z dimensions specified in the request.`;
 
 export const FRAME_TEMPLATE = `<!DOCTYPE html>
 <html>
