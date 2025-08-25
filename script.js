@@ -274,9 +274,9 @@ const handleFrameMessages = e => {
     else { alertBox('warning', 'No exportable objects found in the scene'); }
   } else if (type === 'SIZE_UPDATE') {
     const { x, y, z } = e.data;
-    $('size-x').textContent = x.toFixed(4);
-    $('size-y').textContent = y.toFixed(4);
-    $('size-z').textContent = z.toFixed(4);
+    $('size-x').textContent = x;
+    $('size-y').textContent = y;
+    $('size-z').textContent = z;
   } else if (type === 'DOWNLOAD') {
     try {
       let blob;
